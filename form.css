@@ -1,0 +1,22 @@
+* {
+  --blue: #0d47a1;
+  --red: #ee1010;
+  --gray: #333;
+  --teal: #00838f;
+}
+
+.form-header {
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  width: 65%;
+}
+
+.form-background {
+  z-index: -2;
+  position: absolute;
+  background-color: var(--red);
+  width: 65%;
+  height: 8rem;
+  border-top-right-radius: 3rem;
+}
