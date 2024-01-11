@@ -18,7 +18,7 @@ const hirebtnobserver = new IntersectionObserver(function (
 ) {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) {
-      hirebtn.classList.toggle("disappear");
+      hirebtn.classList.remove("disappear");
     } else {
       hirebtn.classList.add("disappear");
     }

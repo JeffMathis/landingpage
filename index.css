@@ -25,7 +25,7 @@ header {
 
 .background {
   background-image: url(./assets/web-design-2906159_1920.jpg);
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   background-size: cover;
 }
@@ -44,10 +44,15 @@ header h1 {
 
 .background-overlay {
   z-index: 2;
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-transition {
+  transform: translateY(-2rem);
+  transition-duration: 400ms;
 }
 
 .header-text-wrapper {
@@ -150,6 +155,7 @@ header h1 {
 }
 
 .floating-btn {
+  z-index: 99;
   position: fixed;
   bottom: 0;
   right: 0;
