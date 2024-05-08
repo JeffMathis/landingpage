@@ -113,7 +113,14 @@ header h1 {
 .example-title {
   display: grid;
   grid-template-columns: auto auto;
-  gap: 1rem 2.5rem;
+  grid-template-areas: "small1 small2"
+  "long long";
+  gap: 1rem;
+  margin: 0 .5rem;
+}
+
+#btn3 {
+  grid-area: long;
 }
 
 .example-btn {
@@ -129,14 +136,24 @@ header h1 {
   color: white;
 }
 
-.example-img-wrapper {
+.canvas-area {
   margin: 2rem 0;
+  display: none;
+  text-align: center;
 }
 
-#example-img {
-  width: 100vw;
+.active {
+  display: block;
+}
+
+.canvas-area img {
+  width: 90vw;
   height: 100%;
   padding: 1rem;
+}
+
+.border-bottom {
+  border-bottom: 1px solid black;
 }
 
 .page-split {
